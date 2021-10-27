@@ -1,0 +1,331 @@
+{
+    "schema": {
+        "options": {},
+        "crud_objects": {
+            "academicSessions": {
+                "operations": {
+                    "academicSessions_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/academicSessions"
+                        },
+                        "processing_options": {
+                            "output_field": "academicSessions"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "title": "string*",
+                    "startDate": "string*",
+                    "endDate": "string*",
+                    "type": "string*",
+                    "parent": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "children": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }
+                }
+            },
+            "classes": {
+                "operations": {
+                    "classes_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/classes"
+                        },
+                        "processing_options": {
+                            "output_field": "classes"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "classCode": "string*",
+                    "classType": "string*",
+                    "location": "string*",
+                    "grades": "string*",
+                    "subjects": "string*",
+                    "course": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "school": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "terms": [{
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }],
+                    "subjectCodes": "string*",
+                    "periods": "string*",
+                    "resources": "string"
+                }
+            },
+            "courses": {
+                "operations": {
+                    "courses_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/courses"
+                        },
+                        "processing_options": {
+                            "output_field": "courses"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "title": "string*",
+                    "schoolYear": "string*",
+                    "courseCode": "string*",
+                    "grades": "string*",
+                    "subjects": "string*",
+                    "org": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "subjectCodes": "string*",
+                    "resources": "string"
+                }
+            },
+            "demographics": {
+                "operations": {
+                    "demographics_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/demographics"
+                        },
+                        "processing_options": {
+                            "output_field": "demographics"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "birthDate": "string*",
+                    "sex": "string*",
+                    "americanIndianOrAlaskaNative": "string*",
+                    "asian": "string*",
+                    "blackOrAfricanAmerican": "string*",
+                    "nativeHawaiianOrOtherPacificIslander": "string*",
+                    "white": "string*",
+                    "demographicRaceTwoOrMoreRaces": "string*",
+                    "hispanicOrLatinoEthnicity": "string*",
+                    "countryOfBirthCode": "string*",
+                    "stateOfBirthAbbreviation": "string*",
+                    "cityOfBirth": "string*",
+                    "publicSchoolResidenceStatus": "string*"
+                }
+            },
+            "enrollments": {
+                "operations": {
+                    "enrollments_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/enrollments"
+                        },
+                        "processing_options": {
+                            "output_field": "enrollments"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "user": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "class": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "school": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "role": "string*",
+                    "primary": "string*",
+                    "beginDate": "string*",
+                    "endDate": "string*"
+                }
+            },
+            "orgs": {
+                "operations": {
+                    "orgs_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/orgs"
+                        },
+                        "processing_options": {
+                            "output_field": "orgs"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "name": "string*",
+                    "type": "string*",
+                    "identifier": "string*",
+                    "parent": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "children": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }
+                }
+            },
+            "users": {
+                "operations": {
+                    "orgs_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/users"
+                        },
+                        "processing_options": {
+                            "output_field": "users"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string*",
+                    "username": "string*",
+                    "userIds": [{
+                        "identifier": "string*",
+                        "type": "string*"
+                    }],
+                    "enabledUser": "string*",
+                    "givenName": "string*",
+                    "familyName": "string*",
+                    "middleName": "string*",
+                    "role": "string*",
+                    "identifier": "string*",
+                    "email": "string*",
+                    "sms": "string*",
+                    "phone": "string*",
+                    "agents": [{
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }],
+                    "orgs": [{
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }],
+                    "grades": "string*",
+                    "password": "string*"
+                }
+            }
+            
+        }
+    },
+    "rest": {
+        "config": {
+            "baseUrl": "{tenant_id}",
+            "get": {
+                "maxPageCount": 500,
+                "query_parameters": {
+                },
+                "pagination": {
+                    "mode": "generic",
+                   "path":[],
+                    "page_size":998,
+                    "params":{
+                        "page":"{page_number}",
+                        "limit":999
+                    }
+                },
+                "selector":{
+                    "mode":"objects",
+                    "parameter":"orgs"
+                }
+            },
+            "authentication": "client_credentials",
+            "call_handling": "generic",
+            "test_connection": {
+                "url": "/ims/oneroster/v1p1/orgs"
+            }
+        },
+        "authOptions": {
+            "authUrl": "{tenant_id}/token",
+            "directToken": true
+        }
+    },
+    "connection": {
+        "items": [
+            {
+                "name": "page_size",
+                "type": "textbox",
+                "label": "Page Size:",
+                "value": "1000"
+            },
+            {
+                "name": "token_uri",
+                "type": "textbox",
+                "label": "OAuth Token URI",
+                "value": "/oauth/token"
+            }
+
+        ]
+    }
+}
