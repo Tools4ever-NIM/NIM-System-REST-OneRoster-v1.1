@@ -27,14 +27,14 @@
                     "endDate": "string*",
                     "type": "string*",
                     "parent": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "children": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     }
                 }
             },
@@ -64,14 +64,14 @@
                     "grades": "string*",
                     "subjects": "string*",
                     "course": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "school": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "terms": [{
                         "href": "string",
@@ -109,9 +109,9 @@
                     "grades": "string*",
                     "subjects": "string*",
                     "org": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "subjectCodes": "string*",
                     "resources": "string"
@@ -173,19 +173,19 @@
                     "dateLastModified": "string*",
                     "metadata": "_:string",
                     "user": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "class": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "school": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "role": "string*",
                     "primary": "string*",
@@ -217,14 +217,14 @@
                     "type": "string*",
                     "identifier": "string*",
                     "parent": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "children": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     }
                 }
             },
