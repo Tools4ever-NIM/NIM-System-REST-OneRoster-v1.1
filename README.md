@@ -1,4 +1,4 @@
-# NIM-Conn-System-REST-IMSGlobal-OneRoster-v1p1
+# NIM-Conn-System-REST-IMSGlobal-OneRoster
 
 <p align="center">
   <img src="https://www.tools4ever.com/wp-content/uploads/2020/12/oneroster-logo.png">
