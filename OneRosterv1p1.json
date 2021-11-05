@@ -275,8 +275,136 @@
                     "grades": "string*",
                     "password": "string*"
                 }
+            },
+            "resources": {
+                "operations": {
+                    "resources_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/resources"
+                        },
+                        "processing_options": {
+                            "output_field": "resources"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "title": "string*",
+                    "roles": "string*",
+                    "importance": "string*",
+                    "vendorId": "string*",
+                    "applicationId": "string*"
+                }
+            },
+            "categories": {
+                "operations": {
+                    "categories_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/categories"
+                        },
+                        "processing_options": {
+                            "output_field": "categories"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "title": "string*"
+                }
+            },
+            "lineItems": {
+                "operations": {
+                    "lineItems_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/lineItems"
+                        },
+                        "processing_options": {
+                            "output_field": "lineItems"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "title": "string*",
+                    "description": "string*",
+                    "assignDate": "string*",
+                    "dueDate": "string*",
+                    "class": {
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    },
+                    "category": {
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    },
+                    "gradingPeriod": {
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    },
+                    "resultValueMin": "string*",
+                    "resultValueMax": "string*"
+                }
+            },
+            "results": {
+                "operations": {
+                    "results_get": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/v1p1/results"
+                        },
+                        "processing_options": {
+                            "output_field": "results"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "metadata": "_:string",
+                    "lineItem": {
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    },
+                    "student": {
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    },
+                    "scoreStatus": "string*",
+                    "score": "string*",
+                    "scoreDate": "string",
+                    "comment": "string"
+                }
             }
-            
         }
     },
     "rest": {
@@ -294,22 +422,20 @@
                         "page":"{page_number}",
                         "limit":999
                     }
-                },
-                "selector":{
-                    "mode":"objects",
-                    "parameter":"orgs"
                 }
             },
             "authentication": "client_credentials",
             "call_handling": "generic",
             "test_connection": {
                 "url": "/ims/oneroster/v1p1/orgs"
-            }
+            },
+            "accept": "application/json"
         },
         "authOptions": {
-            "authUrl": "{tenant_id}/token",
+            "authUrl": "{tenant_id}{token_uri}",
             "directToken": true
         }
+        
     },
     "connection": {
         "items": [
