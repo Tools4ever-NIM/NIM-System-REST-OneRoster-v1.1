@@ -1,0 +1,1807 @@
+{
+  "system_name": "SkywardQmlativOneRoster",
+  "system_type_category": "rest",
+  "system_type_name": "OneRosterv1p1",
+  "name_values": [
+    {
+      "name": "client_id",
+      "value": null
+    },
+    {
+      "name": "client_secret",
+      "value": null
+    },
+    {
+      "name": "collections",
+      "value": [
+        "academicSessions",
+        "classes",
+        "classes_terms",
+        "courses",
+        "demographics",
+        "enrollments",
+        "orgs",
+        "users",
+        "users_userIds",
+        "users_agents",
+        "users_orgs",
+        "resources",
+        "categories",
+        "lineItems",
+        "results"
+      ]
+    },
+    {
+      "name": "page_size",
+      "value": null
+    },
+    {
+      "name": "proxy_address",
+      "value": null
+    },
+    {
+      "name": "proxy_password",
+      "value": null
+    },
+    {
+      "name": "proxy_use_flag",
+      "value": null
+    },
+    {
+      "name": "proxy_use_username_password_flag",
+      "value": null
+    },
+    {
+      "name": "proxy_username",
+      "value": null
+    },
+    {
+      "name": "tenant_id",
+      "value": null
+    },
+    {
+      "name": "token_uri",
+      "value": null
+    }
+  ],
+  "collections": [
+    {
+      "col_name": "academicSessions",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "title",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "startDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "endDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "parent_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "academicSessions"
+          ]
+        },
+        {
+          "field_name": "parent_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "children_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "children_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "title",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "title",
+            "startDate",
+            "endDate",
+            "type",
+            "parent_sourcedId",
+            "parent_type",
+            "children_sourcedId",
+            "children_type"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "classes",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "classCode",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "classType",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "location",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "grades",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "subjects",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "course_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "courses"
+          ]
+        },
+        {
+          "field_name": "course_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "school_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "orgs"
+          ]
+        },
+        {
+          "field_name": "school_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "subjectCodes",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "periods",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "terms",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "classCode",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "classCode",
+            "classType",
+            "location",
+            "grades",
+            "subjects",
+            "course_sourcedId",
+            "course_type",
+            "school_sourcedId",
+            "school_type",
+            "subjectCodes",
+            "periods"
+          ]
+        }
+      ],
+      "sys_nn": [
+        {
+          "field_a": "course_sourcedId",
+          "col_a": "courses",
+          "field_b": "school_sourcedId",
+          "col_b": "orgs"
+        }
+      ],
+      "source": "data"
+    },
+    {
+      "col_name": "classes_terms",
+      "fields": [
+        {
+          "field_name": "classes_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "classes"
+          ]
+        },
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "academicSessions"
+          ]
+        },
+        {
+          "field_name": "type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "classes_sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "type"
+          ]
+        }
+      ],
+      "sys_nn": [
+        {
+          "field_a": "classes_sourcedId",
+          "col_a": "classes",
+          "field_b": "sourcedId",
+          "col_b": "academicSessions"
+        }
+      ],
+      "source": "data"
+    },
+    {
+      "col_name": "courses",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "title",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "schoolYear",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "courseCode",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "grades",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "subjects",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "org_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "orgs"
+          ]
+        },
+        {
+          "field_name": "org_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "subjectCodes",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "title",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "title",
+            "schoolYear",
+            "courseCode",
+            "grades",
+            "subjects",
+            "org_sourcedId",
+            "org_type",
+            "subjectCodes"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "demographics",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "users"
+          ]
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "birthDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "sex",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "americanIndianOrAlaskaNative",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "asian",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "blackOrAfricanAmerican",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "nativeHawaiianOrOtherPacificIslander",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "white",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "demographicRaceTwoOrMoreRaces",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "hispanicOrLatinoEthnicity",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "countryOfBirthCode",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "stateOfBirthAbbreviation",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "cityOfBirth",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "publicSchoolResidenceStatus",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "birthDate",
+            "sex",
+            "americanIndianOrAlaskaNative",
+            "asian",
+            "blackOrAfricanAmerican",
+            "nativeHawaiianOrOtherPacificIslander",
+            "white",
+            "demographicRaceTwoOrMoreRaces",
+            "hispanicOrLatinoEthnicity",
+            "countryOfBirthCode",
+            "stateOfBirthAbbreviation",
+            "cityOfBirth",
+            "publicSchoolResidenceStatus"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "enrollments",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "user_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "users"
+          ]
+        },
+        {
+          "field_name": "user_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "class_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "classes"
+          ]
+        },
+        {
+          "field_name": "class_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "school_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "orgs"
+          ]
+        },
+        {
+          "field_name": "school_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "role",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "primary",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "beginDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "endDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "user_sourcedId",
+            "user_type",
+            "class_sourcedId",
+            "class_type",
+            "school_sourcedId",
+            "school_type",
+            "role",
+            "primary",
+            "beginDate",
+            "endDate"
+          ]
+        }
+      ],
+      "sys_nn": [
+        {
+          "field_a": "user_sourcedId",
+          "col_a": "users",
+          "field_b": "school_sourcedId",
+          "col_b": "orgs"
+        },
+        {
+          "field_a": "user_sourcedId",
+          "col_a": "users",
+          "field_b": "class_sourcedId",
+          "col_b": "classes"
+        },
+        {
+          "field_a": "class_sourcedId",
+          "col_a": "classes",
+          "field_b": "school_sourcedId",
+          "col_b": "orgs"
+        }
+      ],
+      "source": "data"
+    },
+    {
+      "col_name": "orgs",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "name",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "identifier",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "parent_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "orgs"
+          ]
+        },
+        {
+          "field_name": "parent_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "children_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "children_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "name",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "name",
+            "type",
+            "identifier",
+            "parent_sourcedId",
+            "parent_type",
+            "children_sourcedId",
+            "children_type"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "users",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "_metadata",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "username",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "enabledUser",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "givenName",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "familyName",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "middleName",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "role",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "identifier",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "email",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "sms",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "phone",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "grades",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "password",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "userIds",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "agents",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "orgs",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "_metadata",
+            "username",
+            "enabledUser",
+            "givenName",
+            "familyName",
+            "middleName",
+            "role",
+            "identifier",
+            "email",
+            "sms",
+            "phone",
+            "grades",
+            "password"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "users_userIds",
+      "fields": [
+        {
+          "field_name": "users_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "users"
+          ]
+        },
+        {
+          "field_name": "identifier",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "users_sourcedId",
+      "display": "type",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "identifier",
+            "type"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "users_agents",
+      "fields": [
+        {
+          "field_name": "users_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "users"
+          ]
+        },
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "users_sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "type"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "users_orgs",
+      "fields": [
+        {
+          "field_name": "users_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "users"
+          ]
+        },
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "users_sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "type"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "resources",
+      "fields": [],
+      "key": "",
+      "display": "",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "title",
+            "roles",
+            "importance",
+            "vendorId",
+            "applicationId"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "categories",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "title",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "title",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "title"
+          ]
+        }
+      ],
+      "sys_nn": [],
+      "source": "data"
+    },
+    {
+      "col_name": "lineItems",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "title",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "description",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "assignDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dueDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "class_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "classes"
+          ]
+        },
+        {
+          "field_name": "class_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "category_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "categories"
+          ]
+        },
+        {
+          "field_name": "category_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "gradingPeriod_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "academicSessions"
+          ]
+        },
+        {
+          "field_name": "gradingPeriod_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "resultValueMin",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "resultValueMax",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "title",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "title",
+            "description",
+            "assignDate",
+            "dueDate",
+            "class_sourcedId",
+            "class_type",
+            "category_sourcedId",
+            "category_type",
+            "gradingPeriod_sourcedId",
+            "gradingPeriod_type",
+            "resultValueMin",
+            "resultValueMax"
+          ]
+        }
+      ],
+      "sys_nn": [
+        {
+          "field_a": "class_sourcedId",
+          "col_a": "classes",
+          "field_b": "category_sourcedId",
+          "col_b": "categories"
+        },
+        {
+          "field_a": "class_sourcedId",
+          "col_a": "classes",
+          "field_b": "gradingPeriod_sourcedId",
+          "col_b": "academicSessions"
+        },
+        {
+          "field_a": "category_sourcedId",
+          "col_a": "categories",
+          "field_b": "gradingPeriod_sourcedId",
+          "col_b": "academicSessions"
+        }
+      ],
+      "source": "data"
+    },
+    {
+      "col_name": "results",
+      "fields": [
+        {
+          "field_name": "sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "status",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "dateLastModified",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "lineItem_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "lineItems"
+          ]
+        },
+        {
+          "field_name": "lineItem_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "student_sourcedId",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": [
+            "users"
+          ]
+        },
+        {
+          "field_name": "student_type",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "scoreStatus",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "score",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "_metadata",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "lineItem_href",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "student_href",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "scoreDate",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        },
+        {
+          "field_name": "comment",
+          "field_type": "string",
+          "include": true,
+          "field_format": "",
+          "field_source": "data",
+          "javascript": "",
+          "ref_col": []
+        }
+      ],
+      "key": "sourcedId",
+      "display": "sourcedId",
+      "name_values": [
+        {
+          "name": "properties",
+          "value": [
+            "sourcedId",
+            "status",
+            "dateLastModified",
+            "_metadata",
+            "lineItem_href",
+            "lineItem_sourcedId",
+            "lineItem_type",
+            "student_href",
+            "student_sourcedId",
+            "student_type",
+            "scoreStatus",
+            "score",
+            "scoreDate",
+            "comment"
+          ]
+        }
+      ],
+      "sys_nn": [
+        {
+          "field_a": "lineItem_sourcedId",
+          "col_a": "lineItems",
+          "field_b": "student_sourcedId",
+          "col_b": "users"
+        }
+      ],
+      "source": "data"
+    }
+  ],
+  "call_id": 160,
+  "auth": true
+}
