@@ -413,6 +413,7 @@
             "get": {
                 "maxPageCount": 500,
                 "query_parameters": {
+                    "scopes": "https://purl.imsglobal.org/spec/or/v1p1/scope/roster.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/roster-demographics.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/gradebook.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/resource.readonly"
                 },
                 "pagination": {
                     "mode": "generic",
@@ -432,7 +433,7 @@
             "accept": "application/json"
         },
         "authOptions": {
-            "authUrl": "{tenant_id}{token_uri}",
+            "authUrl": "{token_uri}",
             "directToken": true
         }
         
