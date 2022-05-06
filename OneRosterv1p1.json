@@ -416,12 +416,12 @@
                     "scopes": "https://purl.imsglobal.org/spec/or/v1p1/scope/roster.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/roster-demographics.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/gradebook.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/resource.readonly"
                 },
                 "pagination": {
-                    "mode": "generic",
-                   "path":[],
-                    "page_size":998,
+                    "mode": "skip_take",
+                    "path":[],
+                    "page_size":"{page_size}",
                     "params":{
-                        "page":"{page_number}",
-                        "limit":999
+                        "limit":"{take_count}",
+                        "offset":"{skip_count}"
                     }
                 }
             },
