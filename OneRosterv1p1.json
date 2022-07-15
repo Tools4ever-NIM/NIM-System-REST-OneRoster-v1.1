@@ -447,9 +447,11 @@
         "authOptions": {
             "authUrl": "{token_uri}",
             "directToken": true,
-            "postData": { 
-                "scope": "https://purl.imsglobal.org/spec/or/v1p1/scope/roster.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/roster-demographics.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/gradebook.readonly https://purl.imsglobal.org/spec/or/v1p1/scope/resource.readonly"
-            }
+            "scopes": ["https://purl.imsglobal.org/spec/or/v1p1/scope/roster.readonly",
+                       "https://purl.imsglobal.org/spec/or/v1p1/scope/roster-demographics.readonly",
+                       "https://purl.imsglobal.org/spec/or/v1p1/scope/gradebook.readonly",
+                       "https://purl.imsglobal.org/spec/or/v1p1/scope/resource.readonly"
+                  ]
         }
         
     },
