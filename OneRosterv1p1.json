@@ -423,7 +423,7 @@
     },
     "rest": {
         "config": {
-            "baseUrl": "{tenant_id}",
+            "baseUrl": "https://{tenant_id}",
             "get": {
                 "query_parameters": {
                 },
@@ -445,7 +445,7 @@
             "accept": "application/json"
         },
         "authOptions": {
-            "authUrl": "{token_uri}",
+            "authUrl": "https://{token_uri}",
             "directToken": true,
             "scopes": ["https://purl.imsglobal.org/spec/or/v1p1/scope/roster.readonly",
                        "https://purl.imsglobal.org/spec/or/v1p1/scope/roster-demographics.readonly",
@@ -467,7 +467,7 @@
                 "name": "token_uri",
                 "type": "textbox",
                 "label": "OAuth Token URI",
-                "value": "/oauth/token"
+                "value": "my.domain.com/oauth/token"
             },
             {
                 "name": "filter_academicSession",
