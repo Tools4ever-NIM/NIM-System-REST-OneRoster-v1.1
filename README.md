@@ -23,11 +23,13 @@ Metadata can be added by leverage the custom field modifications to the system.
 		"crud_objects": {
 			"users": {
 				"resources": {
-					"ic.legacySourcedId": "_:string*"
-					"ic_relationships": {
-						"guardian": "_:string*"
-						"relationshipType": "_:string*"
-						"sourcedId": "_:string*"
+					"metadata": {
+						"ic.legacySourcedId": "string*"
+						"ic_relationships": [{
+							"guardian": "string*"
+							"relationshipType": "string*"
+							"sourcedId": "string*"
+						}]
 					}
 				}
 			}
