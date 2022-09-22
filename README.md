@@ -1,7 +1,7 @@
 # NIM-Conn-System-REST-IMSGlobal-OneRoster
 
 <p align="center">
-  <img src="https://www.tools4ever.com/wp-content/uploads/2020/12/oneroster-logo.png">
+  ![image](https://user-images.githubusercontent.com/24281600/191793944-91e58ec3-6550-4072-b3d9-0060276f0b9b.png)
 </p>
 
 # Configuration
