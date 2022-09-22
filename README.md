@@ -1,8 +1,7 @@
 # NIM-Conn-System-REST-IMSGlobal-OneRoster
-<div style="width: 60%; height: 60%">
+![image](https://user-images.githubusercontent.com/24281600/191794478-0a72c89d-244a-471b-8300-408e711d3862.png)
 
-</div>
-![image](https://user-images.githubusercontent.com/24281600/191793995-b0903801-348e-4aa4-8f72-c6cce1116752.png)
+
 # Configuration
 - 
 
