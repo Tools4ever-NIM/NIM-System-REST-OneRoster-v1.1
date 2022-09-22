@@ -14,7 +14,7 @@ Reference the documentation for additional parameters
 
 # Metadata
 Metadata can be added by leverage the custom field modifications to the system. 
-1. Create file "C:\ProgramData\Tools4ever\NIM\config\rest\systems\**SystemNameHere**.json"
+1. Create file in "C:\ProgramData\Tools4ever\NIM\config\rest\systems\" called <SystemNameHere>.json
 2. Define JSON for custom Fields. Example below
 
 ```
