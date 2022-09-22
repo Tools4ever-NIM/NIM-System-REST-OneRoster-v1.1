@@ -33,11 +33,11 @@
                         "sourcedId": "_:string*",
                         "type": "_:string*"
                     },
-                    "children": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
-                    }
+                    "children": [{
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }]
                 }
             },
             "classes": {
@@ -61,12 +61,11 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "classCode": "string*",
                     "classType": "string*",
                     "location": "string*",
-                    "grades": "string*",
-                    "subjects": "string*",
+                    "grades": ["string*"],
+                    "subjects": ["string*"],
                     "course": {
                         "href": "_:string",
                         "sourcedId": "_:string*",
@@ -82,9 +81,13 @@
                         "sourcedId": "string*",
                         "type": "string*"
                     }],
-                    "subjectCodes": "string*",
-                    "periods": "string*",
-                    "resources": "string"
+                    "subjectCodes": ["string*"],
+                    "periods": ["string*"],
+                    "resources": [{
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    }]
                 }
             },
             "courses": {
@@ -108,19 +111,26 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "title": "string*",
-                    "schoolYear": "string*",
+                    "schoolYear": {
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
+                    },
                     "courseCode": "string*",
-                    "grades": "string*",
-                    "subjects": "string*",
+                    "grades": ["string*"],
+                    "subjects": ["string*"],
                     "org": {
                         "href": "_:string",
                         "sourcedId": "_:string*",
                         "type": "_:string*"
                     },
-                    "subjectCodes": "string*",
-                    "resources": "string"
+                    "subjectCodes": ["string*"],
+                    "resources": [{
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }]
                 }
             },
             "demographics": {
@@ -144,16 +154,15 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
-                    "birthDate": "string*",
+                    "birthDate": "date*",
                     "sex": "string*",
-                    "americanIndianOrAlaskaNative": "string*",
-                    "asian": "string*",
-                    "blackOrAfricanAmerican": "string*",
-                    "nativeHawaiianOrOtherPacificIslander": "string*",
-                    "white": "string*",
-                    "demographicRaceTwoOrMoreRaces": "string*",
-                    "hispanicOrLatinoEthnicity": "string*",
+                    "americanIndianOrAlaskaNative": "boolean*",
+                    "asian": "boolean*",
+                    "blackOrAfricanAmerican": "boolean*",
+                    "nativeHawaiianOrOtherPacificIslander": "boolean*",
+                    "white": "boolean*",
+                    "demographicRaceTwoOrMoreRaces": "boolean*",
+                    "hispanicOrLatinoEthnicity": "boolean*",
                     "countryOfBirthCode": "string*",
                     "stateOfBirthAbbreviation": "string*",
                     "cityOfBirth": "string*",
@@ -198,9 +207,9 @@
                         "type": "_:string*"
                     },
                     "role": "string*",
-                    "primary": "string*",
-                    "beginDate": "string*",
-                    "endDate": "string*"
+                    "primary": "boolean*",
+                    "beginDate": "date*",
+                    "endDate": "date*"
                 }
             },
             "orgs": {
@@ -224,7 +233,6 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "name": "string*",
                     "type": "string*",
                     "identifier": "string*",
@@ -233,11 +241,11 @@
                         "sourcedId": "_:string*",
                         "type": "_:string*"
                     },
-                    "children": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
-                    }
+                    "children": [{
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    }]
                 }
             },
             "users": {
@@ -286,7 +294,6 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "username": "string*",
-                    "metadata": "_:string*",
                     "userIds": [{
                         "identifier": "string*",
                         "type": "string*"
@@ -296,19 +303,13 @@
                         "description": "string*",
                         "profileId": "string*",
                         "profileType": "string*",
-                        "vendorId": "string*",
-                        "credentials": [{
-                            "type": "string",
-                            "username": "string",
-                            "password": "string",
-                            "extensions": "string"
-                        }]
+                        "vendorId": "string*"
                     }],
                     "userMasterIdentifier": "string*",
                     "primaryOrg": {
-                        "href": "string",
-                        "sourcedId": "string*",
-                        "type": "string*"
+                        "href": "_:string",
+                        "sourcedId": "_:string*",
+                        "type": "_:string*"
                     },
                     "grades": ["string*"],
                     "agents": [{
@@ -328,7 +329,7 @@
                     "resourcesList": {
                         "method": "get",
                         "call": {
-                            "path": "/ims/oneroster/rostering/v1p2/resources"
+                            "path": "/ims/oneroster/resources/v1p2/resources"
                         },
                         "processing_options": {
                             "output_field": "resources"
@@ -342,9 +343,8 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "title": "string*",
-                    "roles": "string*",
+                    "roles": ["string*"],
                     "importance": "string*",
                     "vendorId": "string*",
                     "applicationId": "string*"
@@ -355,7 +355,7 @@
                     "categoriesList": {
                         "method": "get",
                         "call": {
-                            "path": "/ims/oneroster/rostering/v1p2/categories"
+                            "path": "/ims/oneroster/gradebook/v1p2/categories"
                         },
                         "processing_options": {
                             "output_field": "categories"
@@ -369,8 +369,8 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
-                    "title": "string*"
+                    "title": "string*",
+                    "weight": "number*"
                 }
             },
             "lineItems": {
@@ -378,7 +378,7 @@
                     "lineItemsList": {
                         "method": "get",
                         "call": {
-                            "path": "/ims/oneroster/rostering/v1p2/lineItems"
+                            "path": "/ims/oneroster/gradebook/v1p2/lineItems"
                         },
                         "processing_options": {
                             "output_field": "lineItems"
@@ -392,28 +392,46 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "title": "string*",
                     "description": "string*",
-                    "assignDate": "string*",
-                    "dueDate": "string*",
+                    "assignDate": "date*",
+                    "dueDate": "date*",
                     "class": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "school": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
                     },
                     "category": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
                     },
                     "gradingPeriod": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
                     },
-                    "resultValueMin": "string*",
-                    "resultValueMax": "string*"
+                    "academicSession": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "scoreScale": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "resultValueMin": "number*",
+                    "resultValueMax": "number*",
+                    "learningObjectiveSet": [{
+                        "source": "string*",
+                        "learningObjectiveIds": ["string*"]
+                    }]
                 }
             },
             "results": {
@@ -421,7 +439,7 @@
                     "resultsList": {
                         "method": "get",
                         "call": {
-                            "path": "/ims/oneroster/rostering/v1p2/results"
+                            "path": "/ims/oneroster/gradebook/v1p2/results"
                         },
                         "processing_options": {
                             "output_field": "results"
@@ -435,21 +453,72 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "lineItem": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
                     },
                     "student": {
-                        "href": "_:string",
-                        "sourcedId": "_:string*",
-                        "type": "_:string*"
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "class": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "scoreScale": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
                     },
                     "scoreStatus": "string*",
-                    "score": "string*",
-                    "scoreDate": "string",
-                    "comment": "string"
+                    "textScore": "string*",
+                    "score": "number*",
+                    "scoreDate": "date",
+                    "comment": "string*",
+                    "learningObjectiveSet": [{
+                        "source": "string*",
+                        "learningObjectiveIds": ["string*"]
+                    }]
+                }
+            },
+            "scoreScales": {
+                "operations": {
+                    "resultsList": {
+                        "method": "get",
+                        "call": {
+                            "path": "/ims/oneroster/gradebook/v1p2/scoreScales"
+                        },
+                        "processing_options": {
+                            "output_field": "scoreScales"
+                        },
+                        "query_parameters": {}
+                    }
+                },
+                "parameters": {},
+                "key": "sourcedId",
+                "resources": {
+                    "sourcedId": "string*",
+                    "status": "string*",
+                    "dateLastModified": "string*",
+                    "course": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "class": {
+                        "href": "string",
+                        "sourcedId": "string*",
+                        "type": "string*"
+                    },
+                    "scoreScaleValue": {
+                        "itemValueLHS": "string*",
+                        "itemValueRHS": "string*"
+                    },
+                    "title": "string*",
+                    "type": "string*"
                 }
             }
         }
