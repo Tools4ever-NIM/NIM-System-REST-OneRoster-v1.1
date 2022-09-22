@@ -24,7 +24,14 @@ Metadata can be added by leverage the custom field modifications to the system.
       "users": {
         "resources": {
           "metadata": {
-            "ic.legacySourcedId": "string*"
+            "ic.legacySourcedId": "string*",
+            "ic_relationships": [
+              {
+                "guardian": "string*",
+                "relationshipType": "string*",
+                "sourcedId": "string*"
+              }
+            ]
           }
         }
       },

@@ -303,7 +303,13 @@
                         "description": "string*",
                         "profileId": "string*",
                         "profileType": "string*",
-                        "vendorId": "string*"
+                        "vendorId": "string*",
+                        "credentials": [{
+                            "type": "string",
+                            "username": "string",
+                            "password": "string",
+                            "extensions": "string"
+                        }]
                     }],
                     "userMasterIdentifier": "string*",
                     "primaryOrg": {
