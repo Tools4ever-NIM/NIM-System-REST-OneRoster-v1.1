@@ -19,22 +19,62 @@ Metadata can be added by leverage the custom field modifications to the system.
 
 ```
 {
-	"schema": {
-		"crud_objects": {
-			"users": {
-				"resources": {
-					"metadata": {
-						"ic.legacySourcedId": "string*"
-						"ic_relationships": [{
-							"guardian": "string*"
-							"relationshipType": "string*"
-							"sourcedId": "string*"
-						}]
-					}
-				}
-			}
-		}
-	}
+  "schema": {
+    "crud_objects": {
+      "users": {
+        "resources": {
+          "metadata": {
+            "ic.legacySourcedId": "string*",
+            "ic_relationships": [
+              {
+                "guardian": "string*",
+                "relationshipType": "string*",
+                "sourcedId": "string*"
+              }
+            ]
+          }
+        }
+      },
+      "results": {
+        "resources": {
+          "metadata": {
+            "ext_infiniteCampus_assignmentRawScore": "string*",
+            "ext_infiniteCampus_isAssignmentResult": "string*",
+            "ext_infiniteCampus_schoolSourcedId": "string*"
+          }
+        }
+      },
+      "lineItems": {
+        "resources": {
+          "metadata": {
+            "ext_infiniteCampus_isGradingWindowOpen": "string*",
+            "ext_infiniteCampus_isOneTime": "string*",
+            "ext_infiniteCampus_isStandard": "string*"
+          }
+        }
+      },
+      "demographics": {
+        "resources": {
+          "metadata": {
+            "ic_address": {
+              "city": "string*",
+              "districtResidenceName": "string*",
+              "districtResidenceNumber": "string*",
+              "number": "string*",
+              "sourcedId": "string*",
+              "state": "string*",
+              "street": "string*",
+              "tag": "string*",
+              "zipcode": "string*"
+            },
+            "ic_homePhone": "string*",
+            "ic_cellPhone": "string*",
+            "ic_workPhone": "string*"
+          }
+        }
+      }
+    }
+  }
 }
 ```
 
