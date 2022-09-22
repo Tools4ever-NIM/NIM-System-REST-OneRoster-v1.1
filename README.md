@@ -12,5 +12,9 @@ Reference the documentation for additional parameters
 - v1.1
   - http://www.imsglobal.org/oneroster-v11-final-specification#_Toc480451997
 
+# Known Limitations
+- Users > userProfiles > Credentials
+  - Not currently available
+
 # NIM Docs
 The official NIM documentation can be found at: https://docs.nimsuite.com
