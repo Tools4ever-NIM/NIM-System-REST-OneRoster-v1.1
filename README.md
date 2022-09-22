@@ -12,6 +12,30 @@ Reference the documentation for additional parameters
 - v1.1
   - http://www.imsglobal.org/oneroster-v11-final-specification#_Toc480451997
 
+# Metadata
+Metadata can be added by leverage the custom field modifications to the system. 
+1. Create file "C:\ProgramData\Tools4ever\NIM\config\rest\systems\<SYSTEM NAME HERE>.json"
+2. Define JSON for custom Fields. Example below
+
+```
+{
+	"schema": {
+		"crud_objects": {
+			"users": {
+				"resources": {
+					"ic.legacySourcedId": "_:string*"
+					"ic_relationships": {
+						"guardian": "_:string*"
+						"relationshipType": "_:string*"
+						"sourcedId": "_:string*"
+					}
+				}
+			}
+		}
+	}
+}
+```
+
 # Known Limitations
 - Users > userProfiles > Credentials
   - Not currently available
