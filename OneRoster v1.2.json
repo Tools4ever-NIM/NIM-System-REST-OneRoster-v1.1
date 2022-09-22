@@ -61,6 +61,7 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
+                    "title": "string*",
                     "classCode": "string*",
                     "classType": "string*",
                     "location": "string*",
@@ -190,7 +191,6 @@
                     "sourcedId": "string*",
                     "status": "string*",
                     "dateLastModified": "string*",
-                    "metadata": "_:string",
                     "user": {
                         "href": "_:string",
                         "sourcedId": "_:string*",
