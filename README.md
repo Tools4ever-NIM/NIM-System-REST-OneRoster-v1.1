@@ -74,6 +74,8 @@ Metadata can be added by leverage the custom field modifications to the system.
 # Known Limitations
 - Users > userProfiles > Credentials
   - Not currently available
+- Metadata > Array Objects
+  - Not currently available
 
 # NIM Docs
 The official NIM documentation can be found at: https://docs.nimsuite.com
