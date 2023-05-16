@@ -439,9 +439,23 @@
             },
             "authentication": "client_credentials",
             "call_handling": "generic",
+			"retry": [
+                {
+                    "type": "statusCode",
+                    "statusCode": 503
+                },
+				{
+                    "type": "statusCode",
+                    "statusCode": 504
+                },
+                {
+                    "type": "connectionError"
+                }
+            ],
             "test_connection": {
                 "url": "/ims/oneroster/v1p1/orgs"
             },
+			"socket_timeout": 900000,
             "accept": "application/json"
         },
         "authOptions": {
