@@ -463,9 +463,9 @@
             "directToken": true,
             "scopes": ["https://purl.imsglobal.org/spec/or/v1p1/scope/roster.readonly",
                        "https://purl.imsglobal.org/spec/or/v1p1/scope/roster-demographics.readonly"
-                  ]
+                  ],
+	    "treat500AsAuthError": true
         }
-        
     },
     "connection": {
         "items": [
