@@ -1,4 +1,4 @@
-# NIM-Conn-System-REST-IMSGlobal-OneRoster
+# OneRoster v1.1
 <img src="https://user-images.githubusercontent.com/24281600/191794680-5b4ef3e4-9323-4d0a-9548-6fff0b020fc5.png" width="256px"/>
 
 
