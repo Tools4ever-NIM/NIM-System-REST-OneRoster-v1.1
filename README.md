@@ -1,4 +1,7 @@
 # OneRoster v1.1
+
+Read the [OneRoster v1.1 integration documentation](https://docs.nimsuite.com/en/integrations/oneroster-v1-1) for connector details and related guides.
+
 <img src="https://user-images.githubusercontent.com/24281600/191794680-5b4ef3e4-9323-4d0a-9548-6fff0b020fc5.png" width="256px"/>
 
 
